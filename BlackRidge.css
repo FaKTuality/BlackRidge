@@ -1,0 +1,406 @@
+@media (min-width: 1100px){
+
+    main {  
+        padding-left: 25%;
+        padding-right: 25%;
+        line-height: 40px;          
+    }
+
+    .hamburger, .cancel {
+        display: none; 
+    }
+
+    #headerNav {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center; 
+        padding: 30px; 
+        position: relative; 
+    }
+
+    header {
+        border-bottom: solid  rgb(218, 170, 40); 
+    }
+
+    .secondLogo {
+        display: none; 
+    }
+
+    .logo {
+        position: absolute; 
+        top: -30px;  
+        left: -40px; 
+        width: 200px; 
+        height: 150px; 
+
+    }
+
+
+    .navLink {
+        text-decoration: none;
+        font-size: 20px; 
+        color: black; 
+        padding: 20px; 
+        transition: border-bottom 0.3s ease; 
+    }  
+    
+    .navLink:hover {
+        border-bottom: solid rgb(218, 170, 40); 
+        color: rgb(218, 170, 40);
+    }
+
+
+
+    ul {
+        list-style-position: inside; 
+    }
+
+    h2 {
+        font-size: 40px; 
+    }
+
+    iframe {
+        min-width: 450px; 
+        min-height: 415px; 
+    }    
+
+    .privacyPolicy, .TOS, .consumerDisclosure, .notAGovAgency, .notALawFirm {
+        position: fixed; 
+        top: 25%; 
+        left: 25%; 
+        margin: 0; 
+        width:50%; 
+        height: 50%; 
+        border: solid black; 
+        background-color: white; 
+        z-index: 10000000000000000000000000; 
+        box-sizing: border-box;
+        padding: 20px 20px;     
+        overflow: auto; 
+        
+    }
+  
+}
+
+@media (max-width: 1099px) {
+    .headerNav {
+        display: flex; 
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 5px; 
+        position: fixed;
+        padding-top: 20px; 
+              
+        transition: right 0.3s ease;
+        margin-top: 0px; 
+        right: -100%;   
+        top: 0px;   
+        width: 45%; 
+        height: 100%; 
+        background: beige; 
+        z-index: 999;
+        text-align: justify;    
+        font-size: 20px; 
+        
+    }
+
+    .headerNavClicked {
+        display: flex; 
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px; 
+        position: fixed;
+        padding-top: 20px; 
+        transition: right 0.3s ease;
+        margin-top: 0px; 
+        right: 0px;   
+        top: 0px;   
+        width: 45%; 
+        height: 100%; 
+        background: beige;  
+        z-index: 999;
+        text-align: justify;
+        font-size: 20px; 
+
+    }
+
+    header {
+        padding: 20px 20px 20px 30px; 
+        margin: 0 0 80px 0;  
+        position: fixed; 
+        top:0px; 
+        background-color: white; 
+        width: 100%; 
+        height: 80px; 
+        z-index: 999; 
+                
+    }    
+
+
+    .policyClicked {
+        display: none; 
+    }
+
+    #logo {
+        display: none; 
+    }
+
+    .secondLogo{
+        position: absolute; 
+        top: -10px;  
+        left: -40px;
+      
+        width: 200px; 
+        height: 150px; 
+    }
+
+
+    .navLink {
+        text-decoration: none;
+        color: black; 
+        padding: 2px; 
+
+        
+    }
+
+    .navLink:hover {
+        border-radius: 4px; 
+        border: solid black thin; 
+        background-color: rgb(218, 170, 40); 
+    }
+
+ 
+    main {
+        padding: auto auto; 
+        line-height: 2;
+        margin-top: 75px; 
+
+    }
+
+
+    h2 {
+        font-size: 35px
+    }
+
+    form {
+        line-height: 2; 
+    }
+
+
+
+    iframe {
+        min-width: 350px; 
+        min-height: 315px; 
+    }
+    
+    .visibleCancel {
+        display: block; 
+        position: fixed; 
+        right: 8px;
+        top: 5px;  
+        z-index: 1000; 
+        color: black; 
+        font-size: 40px;
+        cursor: pointer; 
+    }    
+
+    .privacyPolicy, .TOS, .consumerDisclosure, .notAGovAgency, .notALawFirm {
+        position: fixed; 
+        top: 25%; 
+        left: 15%; 
+        width:70%; 
+        height: 50%; 
+        border: solid black; 
+        background-color: white; 
+        z-index: 10000000000000000000000000; 
+        box-sizing: border-box;
+        padding: 20px 20px;     
+        overflow: auto; 
+    }
+
+}
+
+    .reblur, .blur {
+        filter: blur(5px);         
+    }
+
+main, .policyParagraphs {
+    font-family: 'Inter', sans-serif; 
+}
+
+body{
+    margin: 0; 
+    box-sizing: border-box;
+    background-color: white;     
+}
+
+h2, h3 {
+    font-family: 'Cormorant', serif;     
+}
+
+
+
+.navList {
+    list-style-type: none;
+}
+
+.clickedHam {
+    display: none; 
+}
+
+.cancel {
+    display: none; 
+}
+
+
+
+.visibleCancel:hover {
+    color: rgb(218, 170, 40); 
+}
+
+.hamburger {
+    position: fixed; 
+    top: 5px; 
+    right: 8px; 
+    z-index: 1000; 
+    color: black; 
+    cursor: pointer; 
+    font-size: 25px; 
+
+}
+
+.hamburger:hover {
+    color: rgb(218, 170, 40); 
+}
+ 
+
+form {
+    border-radius: 7px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around;
+    gap:5px; 
+    align-items:center;  
+    padding: 10px 25%; 
+    min-height: 500px;
+    max-width: 500px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+button {
+    background-color: black; 
+    color: white; 
+    border-radius: 5px; 
+    transition: transform 0.1s ease; 
+    padding: 10px; 
+    min-width: fit-content; 
+}
+
+button:hover {
+    background-color:rgb(218, 170, 40); 
+}
+
+button:active {
+    transform: scale(0.95); 
+}
+
+.section {
+    padding: 20px 20px; 
+    scroll-margin-top: 85px;
+}
+
+input, select {
+    background-color:white; 
+    box-shadow: none; 
+    border: solid thin black; 
+    border-radius: 3px; 
+    min-width: 150px; 
+    width: 300px; 
+    height: 40px; 
+}
+
+
+
+footer {
+    background-color: grey; 
+    color: white; 
+    padding:auto 25%; 
+    font-size: 2px; 
+}
+
+.foot {
+    display: flex; 
+    flex-direction: column; 
+    gap: 3px; 
+    justify-content: space-around;
+    align-items: center; 
+    flex-wrap:wrap; 
+    margin: auto 15%; 
+}
+
+.footlink:hover {
+    border: solid white thin; 
+    border-radius: 3px;
+    cursor: pointer; 
+}
+
+
+
+ul {
+    list-style-type: lower-roman;
+}
+
+p {
+    font-size: 18px;
+}
+
+#firstHeader {
+    position: relative; 
+    left: 2px; 
+}
+
+details {
+    cursor: pointer; 
+}
+
+h2 {
+    color: black; 
+    margin-bottom: 10px;     
+}
+
+hr {
+    color: rgb(218, 170, 40)
+}
+
+.entry {
+    display: flex; 
+    flex-direction: column;
+    gap: 5px; 
+}
+
+.videoReviews {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 6px; 
+}
+
+.invisible {
+    display: none; 
+}
+
+
+
+.close {
+    position: absolute; 
+    
+    right: 4px; 
+    font-size: 40px;         
+}
+
+.close:hover {
+    color: rgb(218, 170, 40); 
+    cursor: pointer; 
+
+}
