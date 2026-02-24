@@ -223,10 +223,10 @@
         display: block; 
         position: fixed; 
         right: 8px;
-        top: 0px;  
+        top: 5px;  
         z-index: 1000; 
         color: black; 
-        font-size: 70px;
+        font-size: 40px;
         cursor: pointer; 
     }    
 
@@ -317,7 +317,7 @@ h2, h3 {
     z-index: 1000; 
     color: black; 
     cursor: pointer; 
-    font-size: 45px; 
+    font-size: 25px; 
 
 }
 
