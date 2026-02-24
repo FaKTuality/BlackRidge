@@ -205,57 +205,124 @@
         </p>
         <p><strong>Request Your Free Review!</strong></p>
         <p>Please fill out the form below:</p>
-       <form action="https://formspree.io/f/xzdajwrw" method="POST">
-    
+<form action="https://formspree.io/f/xzdajwrw" method="POST" class="validated-form">
 
     <div class="entry">
         <label for="fullName">Full Name</label>
-        <input id="fullName" name="fullName" required placeholder="Your full name">
+        <input id="fullName" name="fullName" required placeholder="Your full name" minlength="3">
+        <span class="error-msg">Please enter your full name (at least 3 characters).</span>
     </div>
 
     <div class="entry">
         <label for="phoneNumber">Phone Number</label>
-        <input id="phoneNumber" name="phoneNumber" placeholder="Best number to reach you" required>
+        <input id="phoneNumber" name="phoneNumber" type="tel" 
+               pattern="[0-9]{3}[0-9]{3}[0-9]{4}" 
+               placeholder="1234567890" required>
+        <span class="error-msg">Please enter a 10-digit phone number (numbers only).</span>
     </div>
 
     <div class="entry">
         <label for="email">Email</label>
         <input id="email" name="email" type="email" placeholder="Your email address" required>
+        <span class="error-msg">Please enter a valid email address.</span>
     </div>
 
     <div class="entry">
-        <label for="propertyAddress">Property Address</label>
-        <input id="propertyAddress" name="propertyAddress" placeholder="Address of the foreclosed property" required>   
+        <label for="propertyAddress">Foreclosure home Address</label>
+        <input id="propertyAddress" name="propertyAddress" placeholder="Address of the foreclosed property" required>
+        <span class="error-msg">Address is required.</span>
     </div>
 
     <div class="entry">
-        <label for="cityAndState">City and State</label>
-        <input id="cityAndState" name="cityAndState" placeholder="City, State">
+        <label for="city">City</label>
+        <input id="city" name="city" placeholder="City" required>
+        <span class="error-msg">City is required.</span>
+    </div>
+
+    <div class="entry">
+        <label for="state">State</label>
+        <select id="state" name="state" required>
+            <option value="">Select State</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowaa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+            </select>
+        <span class="error-msg">Please select a state.</span>
     </div>
 
     <div class="entry">
         <label for="yearOfForeclosure">Year of Foreclosure</label>
-        <input id="yearOfForeclosure" name="yearOfForeclosure" placeholder="Example: 2019" type="number">  
+        <input id="yearOfForeclosure" name="yearOfForeclosure" 
+               placeholder="Example: 2019" type="number" 
+               min="1900" max="2026" required>
+        <span class="error-msg">Enter a valid year (e.g., 2019).</span>
     </div>
 
     <div class="entry">
         <label for="ownerOrHeir">Are you the homeowner or an heir?</label>
-        <select id="ownerOrHeir" name="ownerOrHeir">
+        <select id="ownerOrHeir" name="ownerOrHeir" required>
             <option value="Homeowner">Homeowner</option>
             <option value="Heir / Family Member">Heir / Family Member</option>
             <option value="Not Sure">Not Sure</option>
-        </select>  
+        </select>
     </div>
 
-    <p style="color: red; min-width: 300px">
+    <p class="disclaimer">
         Submitting this form does not obligate you in any way. 
         Your information is kept confidential and used only to determine 
         whether excess funds may be available.
     </p>
 
-    <button type="submit" id="review">Request Free Review</button>                                    
-</form>
-      </div>                
+    <button type="submit" id="review">Request Free Review</button>                                        
+</form>      
+</div>                
     </main>
     <div id="policies">
         <div id="privacyPolicy" class="invisible">
@@ -660,14 +727,14 @@ attorney before signing any agreement.
       <footer>
         <hr>
             <div class="foot" id="success">
-                <p>Copyright BlackRidge Continuity LLC © All Rights Reserved</p>
+                <p><span>Copyright BlackRidge Continuity LLC © All Rights Reserved</span></p>
                 <p>
-                    <span><a class="footlink" onclick="footerLink(event, 'privacyPolicy')"> Policy</a></span>|
-                    <span><a class="footlink" onclick="footerLink(event, 'TOS')">Terms of Service</a></span>|
+                    <span><a class="footlink" onclick="footerLink(event, 'privacyPolicy')"> Policy</a></span> |
+                    <span><a class="footlink" onclick="footerLink(event, 'TOS')">Terms of Service</a></span> |
                     <span><a class="footlink" onclick="footerLink(event, 'consumerDisclosure')">Consumer Disclosure</a></span>
                 </p>
                 <p>
-                    <span><a class="footlink" onclick="footerLink(event, 'notAGovAgency')">Not a government agency</a></span>|
+                    <span><a class="footlink" onclick="footerLink(event, 'notAGovAgency')">Not a government agency</a></span> |
                     <span><a class="footlink" onclick="footerLink(event, 'notALawFirm')">Not a law firm</a></span>
                 </p>              
             </div>
