@@ -480,6 +480,7 @@ select:valid:not(:placeholder-shown) {
     color: red;
     font-size: 0.9rem;
     max-width: 400px;
+    min-width: 300px; 
 }
 
 #review {
