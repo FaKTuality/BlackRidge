@@ -12,14 +12,14 @@ const hamClick = (e) => {
     footer.classList.add('reblur'); 
     secondLogo.classList.add('reblur'); 
     window.addEventListener("resize", () => {     
-        if(window.innerWidth >= 1100) {
+        if(window.innerWidth >= 963) {
             cancel.classList.replace('visibleCancel', 'cancel'); 
             headerNav.classList.replace('headerNavClicked', 'headerNav');
             main.classList.remove('reblur');     
             footer.classList.remove('reblur');
         }
 
-        if(window.innerWidth <1100) {
+        if(window.innerWidth <963) {
             e.target.classList.remove('clickedHam'); 
         }
     })     
