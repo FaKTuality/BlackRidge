@@ -17,6 +17,7 @@
         align-items: center; 
         padding: 30px; 
         position: relative; 
+
     }
 
     header {
@@ -43,7 +44,7 @@
 
     .navLink {
         text-decoration: none;
-        font-size: 20px; 
+        font-size: 17px; 
         color: black; 
         padding: 20px; 
         transition: border-bottom 0.3s ease; 
