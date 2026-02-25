@@ -423,14 +423,15 @@ hr {
 
 
 .close {
-    position: absolute; 
-    
-    right: 4px; 
-    font-size: 40px;         
+    position: fixed; 
+    top:10%;
+    right: 50%;
+    font-size: 90px; 
+    color: rgb(218, 170, 40);         
 }
 
 .close:hover {
-    color: rgb(218, 170, 40); 
+    color: black; 
     cursor: pointer; 
 
 }
@@ -488,3 +489,11 @@ select:valid:not(:placeholder-shown) {
     cursor: pointer;
 }
 
+option {
+    color: black;
+    background-color: white;  
+}
+
+option:hover {
+    background-color:rgb(218, 170, 40)
+}
