@@ -10,22 +10,31 @@ const hamClick = (e) => {
     headerNav.classList.replace('headerNav', 'headerNavClicked'); 
     main.classList.add('reblur'); 
     footer.classList.add('reblur'); 
-    secondLogo.classList.add('reblur'); 
-    window.addEventListener("resize", () => {     
-        if(window.innerWidth >= 963) {
-            cancel.classList.replace('visibleCancel', 'cancel'); 
-            headerNav.classList.replace('headerNavClicked', 'headerNav');
-            main.classList.remove('reblur');     
-            footer.classList.remove('reblur');
-        }
-
-        if(window.innerWidth <963) {
-            e.target.classList.remove('clickedHam'); 
-        }
-    })     
+    secondLogo.classList.add('reblur');     
     main.setAttribute('inert', ''); 
     footer.setAttribute('inert', ''); 
 }
+
+
+window.addEventListener("resize", () => {     
+    let cancel = document.getElementById('cancel'); 
+    let headerNav = document.getElementById('headerNav');
+    let main = document.getElementsByTagName('main')[0]; 
+    let footer = document.getElementsByTagName('footer')[0]; 
+    let ham = document.getElementById('hamburger');
+    let secondLogo = document.getElementById('secondLogo');
+
+    if (window.innerWidth >= 963) {
+        cancel.classList.replace('visibleCancel', 'cancel'); 
+        headerNav.classList.replace('headerNavClicked', 'headerNav');
+        ham.classList.remove('clickedHam');
+        main.classList.remove('reblur');     
+        footer.classList.remove('reblur');
+        secondLogo.classList.remove('reblur');
+        main.removeAttribute('inert'); 
+        footer.removeAttribute('inert'); 
+    }
+});
 
 const xClick = (e) => {
     let ham = document.getElementById('hamburger'); 
@@ -41,8 +50,8 @@ const xClick = (e) => {
     main.classList.remove('reblur'); 
     footer.classList.remove('reblur');  
     secondLogo.classList.remove('reblur');        
-    main.removeAttribute('inert', ''); 
-    footer.removeAttribute('inert', '');    
+    main.removeAttribute('inert'); 
+    footer.removeAttribute('inert');    
 }
 
 const linkClick = () => {
@@ -59,8 +68,8 @@ const linkClick = () => {
     main.classList.remove('reblur');     
     footer.classList.remove('reblur');  
     secondLogo.classList.remove('reblur');  
-    main.removeAttribute('inert', ''); 
-    footer.removeAttribute('inert', '');    
+    main.removeAttribute('inert'); 
+    footer.removeAttribute('inert');    
 }
 
 const footerLink = (event, linkId) => {
@@ -91,9 +100,9 @@ const closeClick = (event, linkId) => {
     footer.classList.remove('blur'); 
     target.classList.replace(linkId, 'invisible');     
     headerNav.classList.remove('policyClicked');  
-    main.removeAttribute('inert', ''); 
-    header.removeAttribute('inert', ''); 
-    footer.removeAttribute('inert', '');            
+    main.removeAttribute('inert'); 
+    header.removeAttribute('inert'); 
+    footer.removeAttribute('inert');            
 }
 
 const submit = (event) => {
