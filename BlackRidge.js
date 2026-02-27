@@ -102,9 +102,134 @@ const closeClick = (event, linkId) => {
     headerNav.classList.remove('policyClicked');  
     main.removeAttribute('inert'); 
     header.removeAttribute('inert'); 
-    footer.removeAttribute('inert');            
+    footer.removeAttribute('inert');  
+      
+}
+let toggle = true; 
+    const customDD = (event) => {
+    const customUL = document.getElementById('customUL'); 
+    if(toggle) {
+        console.log('open dd1')
+        const customUL = document.getElementById('customUL'); 
+        const body = document.getElementsByTagName('body')[0]; 
+        customUL.classList.replace('invisible', 'visibleCustomUL')
+        event.stopPropagation(); 
+        body.addEventListener('click', () => {
+            if(customUL.classList.contains('visibleCustomUL')) {
+                console.log('close dd1')
+                customUL.classList.replace('visibleCustomUL', 'invisible') 
+                toggle = !toggle; 
+            }
+            
+        })
+        toggle = !toggle; 
+    } else {
+        console.log('close dd1')
+        customUL.classList.replace('visibleCustomUL', 'invisible') 
+        toggle = !toggle; 
+    }
+
+    
 }
 
-const submit = (event) => {
+let toggle2 = true; 
+    const customDD2 = (event) => {
+    console.log(toggle2); 
+    const customUL = document.getElementById('customUL2'); 
+    if(toggle2) {
+        console.log('open dd2')
+        
+        const customUL = document.getElementById('customUL2'); 
+        const body = document.getElementsByTagName('body')[0]; 
+        customUL.classList.replace('invisible', 'visibleCustomUL2')
+        event.stopPropagation(); 
+        body.addEventListener('click', () => {
+            if(customUL.classList.contains('visibleCustomUL2')) {
+                console.log('close dd2')
+                customUL.classList.replace('visibleCustomUL2', 'invisible')
+                toggle2 = !toggle2;  
+            }
+        })
+        toggle2 = !toggle2;  
+        
+    } else {
+        console.log('close dd2')
+        customUL.classList.replace('visibleCustomUL2', 'invisible') 
+        toggle2 = !toggle2;  
+    }
+
+  
+}
+
+const optClick = (event) => {
+    const customUL = document.getElementById('customUL'); 
+    const inp = document.getElementById('inp'); 
+    customUL.classList.replace('visibleCustomUL', 'invisible')  
+    inp.value = event.target.textContent; 
+    inp.dispatchEvent(new Event('change')); 
+
 
 }
+
+const optClick2 = (event) => {
+    const customUL = document.getElementById('customUL2'); 
+    const inp = document.getElementById('inp2'); 
+    customUL.classList.replace('visibleCustomUL2', 'invisible')  
+    inp.value = event.target.textContent; 
+    inp.dispatchEvent(new Event('change')); 
+
+
+}
+
+const val = (event, placeholder) => {
+    console.log("This is val1");
+    const errMsg = document.getElementById('span-error')
+    const inp = document.getElementById('inp'); 
+    if(event.target.value === placeholder){
+        console.log(event.target.value); 
+        errMsg.classList.replace('span-error-msg', 'spanVisible')
+        inp.style.border = '2px solid red'; 
+    } else {
+        errMsg.classList.replace('spanVisible', 'span-error-msg')
+        inp.style.border = '2px solid green';         
+    }
+}
+
+const val2 = (event, placeholder) => {
+    console.log("This is val2");
+    const errMsg = document.getElementById('span-error2')
+    const inp = document.getElementById('inp2'); 
+    if(event.target.value === placeholder){
+        console.log(placeholder)
+        console.log(event.target.value); 
+        errMsg.classList.replace('span-error-msg', 'spanVisible')
+        inp.style.border = '2px solid red'; 
+    } else {
+        errMsg.classList.replace('spanVisible', 'span-error-msg')
+        inp.style.border = '2px solid green';         
+    }
+}
+
+
+
+document.querySelector('form').addEventListener('submit', (e) => {
+    const inp = document.getElementById('inp');
+    const inp2 = document.getElementById('inp2');
+    const errMsg = document.getElementById('span-error');
+    const errMsg2 = document.getElementById('span-error2');
+    let valid = true;
+
+    if (inp.value === 'Select State') {
+        errMsg.classList.replace('span-error-msg', 'spanVisible');
+        inp.style.border = '2px solid #d93025';
+        valid = false;
+    }
+
+    if (inp2.value === 'Select relationship') {
+        errMsg2.classList.replace('span-error-msg', 'spanVisible');
+        inp2.style.border = '2px solid #d93025';
+        valid = false;
+    }
+
+    if (!valid) e.preventDefault();
+});

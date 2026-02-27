@@ -424,12 +424,14 @@ hr {
 
 
 .close {
-    position: fixed; 
-    top:10%;
-    right: 50%;
-    font-size: 90px; 
-    color: rgb(218, 170, 40);         
+    position: absolute; 
+    top: 5%;  
+    right: 5%;
+    font-size: 50px;  
+    color: rgb(218, 170, 40);
 }
+
+
 
 .close:hover {
     color: black; 
@@ -478,8 +480,9 @@ select:valid:not(:placeholder-shown) {
     border: 2px solid #1e8e3e;
 }
 
+
 .disclaimer {
-    color: red;
+    color: #d93025;
     font-size: 0.9rem;
     max-width: 400px;
     min-width: 300px; 
@@ -497,4 +500,92 @@ option {
 
 option:hover {
     background-color:rgb(218, 170, 40)
+}
+
+
+#inpDiv, #inpDiv2 {
+    position: relative; 
+    min-width: 150px; 
+    height: 20px;
+    margin-bottom: 20px; 
+}
+
+#inpSpan, #inpSpan2 {
+    position: absolute; 
+    top: 2px; 
+    right: 8px; 
+    cursor: pointer; 
+    font-size:large; 
+    padding-left: 20px; 
+}
+
+#inp, #inp2 {
+    padding-left: 5px; 
+}
+
+.visibleCustomUL {
+    position: absolute;
+    min-width: 150px;
+    width: 300px; 
+    display: flex; 
+    flex-direction: column;
+    gap: .5px; 
+    padding-top: 0px; 
+    padding-left: 5px; 
+    margin-top: 0px; 
+    overflow: auto; 
+    border: solid thin rgb(218, 170, 40); 
+    height: 400px; 
+    background-color: white;
+    top: 65%; 
+    min-height: 20px; 
+    z-index: 9999; 
+     
+}
+
+.visibleCustomUL2 {
+    position: absolute;
+    min-width: 150px;
+    width: 300px; 
+    display: flex; 
+    flex-direction: column;
+    gap: .5px; 
+    padding-top: 0px; 
+    padding-left: 5px; 
+    margin-top: 0px; 
+    overflow: auto; 
+    border: solid thin rgb(218, 170, 40); 
+    height: max-content; 
+    background-color: white;
+    top: 65%; 
+    min-height: 20px; 
+    z-index: 999; 
+     
+}
+
+
+.cust {
+    position: relative; 
+    
+}
+.opt {
+    list-style-type: none;
+    color: black; 
+}
+
+.opt:hover {
+    background-color: rgb(218, 170, 40, .6); 
+    border-radius: 2px;
+    padding: 7px; 
+}
+
+.span-error-msg {
+    display: none; 
+}
+
+.spanVisible {
+    display:inline; 
+    font-size: 13px; 
+    color: #d93025; 
+    margin: 25px 0 0 0; 
 }
