@@ -167,7 +167,7 @@ const optClick = (event) => {
     customUL.classList.replace('visibleCustomUL', 'invisible')  
     inp.value = event.target.textContent; 
     inp.dispatchEvent(new Event('change')); 
-
+    toggle = !toggle; 
 
 }
 
@@ -177,7 +177,7 @@ const optClick2 = (event) => {
     customUL.classList.replace('visibleCustomUL2', 'invisible')  
     inp.value = event.target.textContent; 
     inp.dispatchEvent(new Event('change')); 
-
+    toggle2 = !toggle2;  
 
 }
 
