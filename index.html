@@ -250,6 +250,10 @@
     <div class="entry cust">
         <label 
             for="inp"
+            onclick="(()=>{
+                event.preventDefault(); 
+                customDD(event)
+            })(event)"
         >State</label>
         <div id="inpDiv">
             <input id="inp" 
@@ -327,7 +331,13 @@
     </div>
 
     <div class="entry cust">
-        <label for="inp2">Are you the homeowner or an heir?</label>
+        <label 
+            for="inp2"
+            onclick="(()=>{
+                event.preventDefault(); 
+                customDD2(event)
+            })(event)"            
+            >Are you the homeowner or an heir?</label>
         <div id="inpDiv2">
             <input id="inp2" 
                 value="Select relationship" 
