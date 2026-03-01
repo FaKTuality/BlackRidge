@@ -245,7 +245,9 @@
             <input id="inp" 
                 value="Select State" 
                 name="state" 
-                onchange="val(event, 'Select State')" readonly>
+                onchange="val(event, 'Select State')" 
+                onclick="customDD(event)"
+                readonly>
             <span onclick="customDD(event)" id="inpSpan"><strong>⌵</strong></span>
         </div>
         <ul id="customUL" class="invisible">
@@ -320,7 +322,9 @@
             <input id="inp2" 
                 value="Select relationship" 
                 name="relationship" 
-                onchange="val2(event, 'Select relationship')" readonly>
+                onchange="val2(event, 'Select relationship')" 
+                onclick="customDD2(event)"
+                readonly>
             <span onclick="customDD2(event)" id="inpSpan2"><strong>⌵</strong></span>
         </div>
         <ul id="customUL2" class="invisible">

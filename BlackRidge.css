@@ -516,11 +516,13 @@ option:hover {
     right: 8px; 
     cursor: pointer; 
     font-size:large; 
-    padding-left: 20px; 
+    
+
 }
 
 #inp, #inp2 {
     padding-left: 5px; 
+    cursor: pointer;
 }
 
 .visibleCustomUL {
