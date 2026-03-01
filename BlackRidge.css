@@ -1,5 +1,16 @@
 @media (min-width: 963px){
 
+    iframe {
+        min-width: 300px; 
+        min-height: 300px; 
+    }    
+
+    .videoReviews {
+        display: grid; 
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(2, 300px); 
+        gap: 6px; 
+    }
     main {  
         padding-left: 20%;
         padding-right: 20%;
@@ -64,11 +75,6 @@
     h2 {
         font-size: 40px; 
     }
-
-    iframe {
-        min-width: 450px; 
-        min-height: 415px; 
-    }    
 
     .privacyPolicy, .TOS, .consumerDisclosure, .notAGovAgency, .notALawFirm {
         position: fixed; 
@@ -270,7 +276,18 @@
 
     span {
         font-size: 11px;
+    } 
+
+    .videoReviews {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        gap: 6px; 
     }    
+
+
+        
+
 }
 
     .reblur, .blur {
@@ -409,13 +426,6 @@ hr {
     color: rgb(218, 170, 40)
 }
 
-
-.videoReviews {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    gap: 6px; 
-}
 
 .invisible {
     display: none; 
