@@ -213,7 +213,7 @@
         </p>
         <p><strong>Request Your Free Review!</strong></p>
         <p>Please fill out the form below:</p>
-<form action="https://formspree.io/f/xzdajwrw" method="POST" class="validated-form">
+<form action="https://formspree.io/f/xvgkvror" method="POST" class="validated-form">
 
     <div class="entry">
         <label for="fullName">Full Name</label>
@@ -227,6 +227,17 @@
                pattern="[0-9]{3}[0-9]{3}[0-9]{4}" 
                placeholder="1234567890" required>
         <span class="error-msg">Please enter a 10-digit phone number (numbers only).</span>
+        
+    </div>
+
+    <div class="check">
+            <input type="checkbox" id="compl" name="smsConsent">
+                <label for="compl" id="complLabel">I consent to receive SMS text messages from 
+                    Blackridge Continuity regarding my foreclosure 
+                    review request, eligibility updates, and appointment reminders. Message frequency may vary. 
+                    Message & data rates may apply. Reply STOP to opt out or HELP for assistance. Consent is not 
+                    a condition of purchase.
+                </label>
     </div>
 
     <div class="entry">
@@ -378,9 +389,9 @@
                 </h2>
                 <p>
                     BlackRidge Continuity (“Company,” “we,” “our,” or “us”) respects your privacy and is committed
-to protecting your personal information. This Privacy Policy explains how we collect, use,
-disclose, and safeguard your information when you visit our website or engage our services
-related to the recovery of unclaimed funds.
+                    to protecting your personal information. This Privacy Policy explains how we collect, use,
+                    disclose, and safeguard your information when you visit our website or engage our services
+                    related to the recovery of unclaimed funds.
                 </p>
                 <p>
                     By using our website or services, you consent to the practices described in this Policy.
@@ -537,15 +548,31 @@ be guaranteed 100% secure.
                 </h2>
                 <p>
                     We retain information only as long as necessary to complete services, comply with legal 
-obligations, resolve disputes, and enforce agreements. 
+                    obligations, resolve disputes, and enforce agreements. 
                 </p>
                 <h2>
                     8. Changes to This Policy 
                 </h2>
                 <p>
                     We may update this Privacy Policy periodically. Updates will be posted with a revised “Last 
-Updated” date.
+                    Updated” date.
                 </p>
+                <h2>
+                    9. SMS Communications
+                </h2>
+                <p> 
+                    By providing your phone number and opting in via our website form, you consent to receive 
+                    SMS text messages from Blackridge Continuity regarding your foreclosure case review, excess 
+                    fund eligibility updates, and appointment notifications. 
+                    Message frequency may vary. Message & data rates may apply. Reply STOP to unsubscribe. 
+                    Reply HELP for assistance. 
+                    <strong>
+                        We do not sell, rent, or share your phone number or 
+                        personal information with third parties for marketing 
+                        purposes.
+                    </strong>
+                </p>
+            
 
             </div>
            
@@ -695,6 +722,35 @@ agreement.
                     9. Governing Law 
                 </h2>
                 <p>This Agreement shall be governed by the laws of the State of California. </p>
+                <h2>
+                    10. SMS Terms & Conditions
+                </h2>
+                <ul>
+                    <li>
+                        Program Description: Blackridge Continuity sends SMS messages related to foreclosure case 
+                        reviews, excess fund eligibility updates, and appointment confirmations.                         
+                    </li>
+                    <li>
+                        Opt-In: Users opt in by submitting a website form and checking the SMS consent checkbox. 
+                    </li>
+                    <li>
+                        Opt-Out: You may opt out at any time by replying STOP to any message received. 
+                    </li>
+                    <li>
+                        Help: Reply HELP for assistance.
+                    </li>
+                    <li>
+                        Message Frequency: Message frequency may vary depending on your case status. 
+                    </li>
+                    <li>
+                         Carrier Disclaimer: Carriers are not liable for delayed or undelivered messages. 
+                    </li>
+                    <li>
+                        <strong>
+                            Message & data rates may apply. 
+                        </strong>                        
+                    </li>
+                </ul>
             </div>
             <div class="close" id="close" onclick="closeClick(event, 'TOS')">&times;</div>
         </div>
@@ -772,13 +828,13 @@ attorney before signing any agreement.
             <div class="foot" id="success">
                 <p><span>Copyright BlackRidge Continuity LLC © All Rights Reserved</span></p>
                 <p>
-                    <span><a class="footlink" onclick="footerLink(event, 'privacyPolicy')"> Policy</a></span> |
-                    <span><a class="footlink" onclick="footerLink(event, 'TOS')">Terms of Service</a></span> |
-                    <span><a class="footlink" onclick="footerLink(event, 'consumerDisclosure')">Consumer Disclosure</a></span>
+                    <span><a class="footlink" onclick="footerLink('privacyPolicy')" href="#privacyPolicy"> Policy</a></span> |
+                    <span><a class="footlink" onclick="footerLink('TOS')" href="#TOS">Terms of Service</a></span> |
+                    <span><a class="footlink" onclick="footerLink('consumerDisclosure')" href="#consumerDisclosure">Consumer Disclosure</a></span>
                 </p>
                 <p>
-                    <span><a class="footlink" onclick="footerLink(event, 'notAGovAgency')">Not a government agency</a></span> |
-                    <span><a class="footlink" onclick="footerLink(event, 'notALawFirm')">Not a law firm</a></span>
+                    <span><a class="footlink" onclick="footerLink('notAGovAgency')" href="#notAGovAgency">Not a government agency</a></span> |
+                    <span><a class="footlink" onclick="footerLink('notALawFirm')" href="#notALawFirm">Not a law firm</a></span>
                 </p>              
             </div>
         

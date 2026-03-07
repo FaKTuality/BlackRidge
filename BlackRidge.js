@@ -71,8 +71,10 @@ const linkClick = () => {
     main.removeAttribute('inert'); 
     footer.removeAttribute('inert');    
 }
+let currLoc; 
 
-const footerLink = (event, linkId) => {
+const footerLink = (linkId) => {
+    currLoc = window.location.hash; 
     let target = document.getElementById(linkId); 
     let main = document.getElementsByTagName('main')[0]; 
     let header = document.getElementsByTagName('header')[0]; 
@@ -87,6 +89,8 @@ const footerLink = (event, linkId) => {
     header.setAttribute('inert', '');     
     footer.setAttribute('inert', '');      
 }
+
+
 
 const closeClick = (event, linkId) => {
     
@@ -103,6 +107,7 @@ const closeClick = (event, linkId) => {
     main.removeAttribute('inert'); 
     header.removeAttribute('inert'); 
     footer.removeAttribute('inert');  
+    window.location.hash = currLoc; 
       
 }
 let toggle = true; 
@@ -233,3 +238,24 @@ document.querySelector('form').addEventListener('submit', (e) => {
 
     if (!valid) e.preventDefault();
 });
+
+ window.addEventListener('load', () => {
+        switch(window.location.hash) {
+        case '#privacyPolicy': 
+            console.log('why is she being so inconsiderate. She"s overbearing')
+            footerLink('privacyPolicy');
+            break; 
+        case '#TOS': 
+            footerLink('TOS'); 
+            break; 
+        case '#consumerDisclosure': 
+            footerLink('consumerDisclosure');
+            break; 
+        case '#notAGovAgency': 
+            footerLink('notAGovAgency');
+            break;  
+        case '#notALawFirm': 
+            footerLink('notALawFirm'); 
+            break; 
+    }
+ })

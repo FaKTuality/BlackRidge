@@ -1,19 +1,23 @@
 @media (min-width: 963px){
-
     iframe {
-        min-width: 300px; 
-        min-height: 300px; 
-    }    
+        width: 20vw; 
+        height: 20vw;
+        border: solid thin rgb(218, 170, 40); 
+        margin: 0px; 
+    }
 
     .videoReviews {
-        display: grid; 
-        grid-template-columns: repeat(2, 300px);
-        grid-template-rows: repeat(2, 300px); 
-        gap: 6px; 
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between
+        
+        
+
     }
+
     main {  
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 15%;
+        padding-right: 15%;
         line-height: 40px;          
     }
 
@@ -455,15 +459,30 @@ hr {
     flex-direction: column;
     gap: 5px; 
     flex-wrap: wrap;
-}
-
-
-.entry {
     margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
+   
 }
 
+.check {
+    display: flex; 
+    flex-direction: row; 
+    gap: 2px;  
+    justify-content: flex-start;
+    width: 300px; 
+}
+
+#compl {
+    width: 10px;  
+    height: 10px; 
+    padding: 0px; 
+    min-width: 10px; 
+}
+
+#complLabel {
+    margin-left: 0px; 
+    font-size: 15px; 
+    line-height: 20px;
+}
 
 .error-msg {
     display: none;
