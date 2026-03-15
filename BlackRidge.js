@@ -71,10 +71,10 @@ const linkClick = () => {
     main.removeAttribute('inert'); 
     footer.removeAttribute('inert');    
 }
-let currLoc; 
+
 
 const footerLink = (linkId) => {
-    currLoc = window.location.hash; 
+    
     let target = document.getElementById(linkId); 
     let main = document.getElementsByTagName('main')[0]; 
     let header = document.getElementsByTagName('header')[0]; 
@@ -107,7 +107,7 @@ const closeClick = (event, linkId) => {
     main.removeAttribute('inert'); 
     header.removeAttribute('inert'); 
     footer.removeAttribute('inert');  
-    window.location.hash = currLoc; 
+    
       
 }
 let toggle = true; 
@@ -217,7 +217,7 @@ const val2 = (event, placeholder) => {
 
 
 
-document.querySelector('form').addEventListener('submit', (e) => {
+document.querySelector('form')?.addEventListener('submit', (e) => {
     const inp = document.getElementById('inp');
     const inp2 = document.getElementById('inp2');
     const errMsg = document.getElementById('span-error');
@@ -242,7 +242,6 @@ document.querySelector('form').addEventListener('submit', (e) => {
  window.addEventListener('load', () => {
         switch(window.location.hash) {
         case '#privacyPolicy': 
-            console.log('why is she being so inconsiderate. She"s overbearing')
             footerLink('privacyPolicy');
             break; 
         case '#TOS': 

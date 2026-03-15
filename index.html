@@ -6,6 +6,13 @@
         <link rel="stylesheet" href="BlackRidge.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="Assets/favicon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="Assets/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="Assets/android-chrome-512x512.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="Assets/apple-touch-icon.png">       
+</head>
     </head>
     <body>
         <header>
@@ -230,16 +237,6 @@
         
     </div>
 
-    <div class="check">
-            <input type="checkbox" id="compl" name="smsConsent">
-                <label for="compl" id="complLabel">I consent to receive SMS text messages from 
-                    Blackridge Continuity regarding my foreclosure 
-                    review request, eligibility updates, and appointment reminders. Message frequency may vary. 
-                    Message & data rates may apply. Reply STOP to opt out or HELP for assistance. Consent is not 
-                    a condition of purchase.
-                </label>
-    </div>
-
     <div class="entry">
         <label for="email">Email</label>
         <input id="email" name="email" type="email" placeholder="Your email address" required>
@@ -366,12 +363,31 @@
         </ul>
         <span id="span-error2" class="span-error-msg">Please select a relationship.</span>
     </div> 
+        <div class="check">
+            <input type="checkbox" id="compl" name="smsConsent">
+                <label for="compl" id="complLabel"><strong>I consent to receive SMS text messages from 
+                    Blackridge Continuity regarding my foreclosure 
+                    review request, eligibility updates, and appointment reminders. Message frequency may vary. 
+                    Message & data rates may apply. Reply STOP to opt out or HELP for assistance. Consent is not 
+                    a condition of purchase.</strong>
+                </label>
+    </div>
+    <div class="tAndPLinks">
+        <p id="tAndPL">Terms and Privacy Links:</p>
+        <p><a id="tosl" href="termsOfService.html">Terms of Service</a></p>
+        <p><a id="pp" href="PrivacyPolicy.html">Privacy Policy</a></p>
+
+    </div>
+    
 
 
     <p class="disclaimer">
-        Submitting this form does not obligate you in any way. 
-        Your information is kept confidential and used only to determine 
-        whether excess funds may be available.
+        By providing a telephone number and submitting this form, 
+        you consent to be contacted by SMS text message. 
+        Message & data rates may apply. 
+        By continuing, you agree to our <a id="pp" href="PrivacyPolicy.html">Privacy Policy</a>
+         and <a id="tosl" href="termsOfService.html">Terms</a>. 
+        For help, reply HELP. To unsubscribe, reply STOP.
     </p>
 
     <button type="submit" id="review">Request Free Review</button>                                        
@@ -379,381 +395,8 @@
 </div>                
     </main>
     <div id="policies">
-        <div id="privacyPolicy" class="invisible">
-            <h2>Privacy Policy</h2>
-            <hr>
-             <div class="close" id="close" onclick="closeClick(event, 'privacyPolicy')">&times;</div>            
-            <div class="policyParagraphs">
-                <h2>
-                    1. Introduction
-                </h2>
-                <p>
-                    BlackRidge Continuity (“Company,” “we,” “our,” or “us”) respects your privacy and is committed
-                    to protecting your personal information. This Privacy Policy explains how we collect, use,
-                    disclose, and safeguard your information when you visit our website or engage our services
-                    related to the recovery of unclaimed funds.
-                </p>
-                <p>
-                    By using our website or services, you consent to the practices described in this Policy.
 
-                </p>
-                <h2>
-                    2. Information We Collect
-                </h2>
-                <p>
-                    We may collect the following categories of information:
-                </p>
-                <p>
-                    A. Personal Information 
-                    <ul>
-                        <li>
-                            Full name 
-                        </li>
-                        <li>
-                            Mailing address 
-                        </li>
-                        <li>
-                            Property address 
-                        </li>
-                        <li>
-                            Email address 
-                        </li>
-                        <li>
-                            Phone number 
-                        </li>
-                        <li>
-                            Government-issued identification (if required) 
-                        </li>
-                        <li>
-                            Social Security number or Tax ID (when required for claim processing)
-                        </li>                                                                                                                                                
-                    </ul>
-                </p>
-                <p>
-                   B. Property & Claim Information  
-                    <ul>
-                        <li>
-                           Public property records
-                        </li>
-                        <li>
-                            Foreclosure or tax sale data 
-                        </li>
-                        <li>
-                            Court case information 
-                        </li>
-                        <li>
-                            Documentation required to process claims 
-                        </li>                                                                                                                                             
-                    </ul>
-                </p>
-                <h2>
-                    3. How We Use Your Information 
-                </h2>
-                <p>
-                    We use collected information to:
-                </p>
-                <p>
-                    
-                    <ul>
-                        <li>
-                            Evaluate eligibility for unclaimed funds  
-                        </li>
-                        <li>
-                            Prepare and submit claim documentation
-                        </li>
-                        <li>
-                            Communicate with government agencies
-                        </li>
-                        <li>
-                            Verify identity 
-                        </li>
-                        <li>
-                            Provide customer support 
-                        </li>
-                        <li>
-                            Improve our website and services 
-                        </li>
-                        <li>
-                            Comply with legal and regulatory requirements
-                        </li>                                                                                                                                                
-                    </ul>
-                    We do <strong>not sell</strong> your personal information. 
-                </p>
-                <h2>
-                    4. Information Sharing 
-                </h2>
-                <p>
-                    We may share information with: 
-                </p>
-                <p>
-                    
-                    <ul>
-                        <li>
-                            Government agencies administering unclaimed funds 
-                        </li>
-                        <li>
-                            Courts or county offices 
-                        </li>
-                        <li>
-                            Payment processors
-                        </li>
-                        <li>
-                            Secure document processing vendors
-                        </li>
-                        <li>
-                            Legal or compliance advisors 
-                        </li>
-                        <li>
-                            Law enforcement when required by law 
-                        </li>                                                                                                                                               
-                    </ul>
-                   All third parties are required to maintain confidentiality and data security standards.
-                </p>
-                <h2>
-                    5. Data Security  
-                </h2>
-                <p>
-                    We implement commercially reasonable administrative, technical, and physical safeguards to 
-protect your personal information. However, no electronic transmission or storage system can 
-be guaranteed 100% secure. 
-                </p>
-                
-                <h2>
-                    6. Your Rights 
-                </h2>
-                <p>
-                    Depending on your state of residence, you may have rights including:
-                </p>
-                <p>
-                    
-                    <ul>
-                        <li>
-                            Access to your personal data 
-                        </li>
-                        <li>
-                            Correction of inaccurate information 
-                        </li>
-                        <li>
-                            Request deletion (subject to legal retention requirements) 
-                        </li>
-                        <li>
-                            Opt-out of certain data uses
-                        </li>
-                                                                                                                                               
-                    </ul>
-                    Requests may be submitted to: arturnazaryan223@gmail.com
-                </p>
-                <h2>
-                    7. Data Retention 
-                </h2>
-                <p>
-                    We retain information only as long as necessary to complete services, comply with legal 
-                    obligations, resolve disputes, and enforce agreements. 
-                </p>
-                <h2>
-                    8. Changes to This Policy 
-                </h2>
-                <p>
-                    We may update this Privacy Policy periodically. Updates will be posted with a revised “Last 
-                    Updated” date.
-                </p>
-                <h2>
-                    9. SMS Communications
-                </h2>
-                <p> 
-                    By providing your phone number and opting in via our website form, you consent to receive 
-                    SMS text messages from Blackridge Continuity regarding your foreclosure case review, excess 
-                    fund eligibility updates, and appointment notifications. 
-                    Message frequency may vary. Message & data rates may apply. Reply STOP to unsubscribe. 
-                    Reply HELP for assistance. 
-                    <strong>
-                        We do not sell, rent, or share your phone number or 
-                        personal information with third parties for marketing 
-                        purposes.
-                    </strong>
-                </p>
-            
 
-            </div>
-           
-        </div>
-        <div id="TOS" class="invisible">
-            <h2>Terms of Service</h2>
-            <hr>
-            
-            <div class="policyParagraphs">
-                <h2>
-                    1. Agreement to Terms 
-                </h2>
-                <p>
-                    By accessing this website or engaging BlackRidge Continuity for services, you agree to be 
-bound by these Terms of Service (“Agreement”). 
-                </p>
-                <p>
-                   If you do not agree, do not use this website or our services.  
-                </p>
-                <h2>
-                    2. Nature of Services 
-                </h2>
-                <p>
-                    BlackRidge Continuity is a private third-party company that assists property owners, heirs, or 
-other eligible claimants in identifying and recovering unclaimed funds. 
-                </p>
-                <p>
-                   We are not a government agency and are not affiliated with any federal, state, or county 
-government entity.
-                </p>
-                <h2>
-                    3. No Legal Advice
-                </h2>
-                <p>
-                    We are not a law firm and do not provide legal advice. You may consult independent legal 
-counsel before entering into any agreement.
-                </p>
-                <h2>
-                    4. Eligibility
-                </h2>
-                <p>
-                    You represent that: 
-                </p>
-                <p>
-                    
-                    <ul>
-                        <li>
-                            You are the lawful property owner, heir, or authorized claimant; 
-                        </li>
-                        <li>
-                            All information provided is accurate and truthful; 
-                        </li>
-                        <li>
-                            You have authority to enter into this Agreement. 
-                        </li>
-
-                                                                                                                                               
-                    </ul>
-                </p>
-                <h2>
-                    5. Fees 
-                </h2>
-                <p>
-                    Our services are provided on a contingency fee basis unless otherwise stated in a written 
-agreement. 
-                </p>
-                <p>
-                    
-                    <ul>
-                        <li>
-                            No fee is owed unless funds are successfully recovered.
-                        </li>
-                        <li>
-                            Our fee is 30% of recovered funds.  
-                        </li>
-                        <li>
-                            Fees will be deducted from recovered proceeds or invoiced upon disbursement. 
-                        </li>
-                        Client is responsible for any government filing fees unless otherwise agreed.                                                                                                                                                
-                    </ul>
-                </p>
-                <h2>
-                    6. Client Responsibilities
-                </h2>
-                <p>
-                    Client agrees to: 
-                </p>
-                <p>
-                    
-                    <ul>
-                        <li>
-                            Provide accurate documentation 
-                        </li>
-                        <li>
-                            Respond promptly to requests 
-                        </li>
-                        <li>
-                            Execute required forms 
-                        </li>
-                        <li>
-                            Notify us of any direct communication from agencies
-                        </li>          
-                        Failure to cooperate may delay or void claim processing.                                                                                                                                    
-                    </ul>
-                </p>
-                <h2>
-                    7. Limitation of Liability 
-                </h2>
-                <p>
-                    To the fullest extent permitted by law: 
-                </p>
-                <p>
-                    
-                    <ul>
-                        <li>
-                            We do not guarantee recovery of funds. 
-                        </li>
-                        <li>
-                            We are not liable for agency processing delays. 
-                        </li>
-                        <li>
-                            Our total liability shall not exceed the fees paid to us. 
-                        </li>                                                                                                                                   
-                    </ul>
-                </p>
-                <h2>
-                    8. Dispute Resolution 
-                </h2>
-                <p>
-                    Any disputes arising from this Agreement shall be resolved through: 
-                </p>
-                <p>
-                    
-                    <ul>
-                        <li>
-                            Good faith negotiation  
-                        </li>
-                        <li>
-                            Mediation, if necessary 
-                        </li>
-                        <li>
-                            Binding arbitration in California], unless prohibited by law 
-                        </li>                                                                                                                                   
-                    </ul>
-                </p>
-                <h2>
-                    9. Governing Law 
-                </h2>
-                <p>This Agreement shall be governed by the laws of the State of California. </p>
-                <h2>
-                    10. SMS Terms & Conditions
-                </h2>
-                <ul>
-                    <li>
-                        Program Description: Blackridge Continuity sends SMS messages related to foreclosure case 
-                        reviews, excess fund eligibility updates, and appointment confirmations.                         
-                    </li>
-                    <li>
-                        Opt-In: Users opt in by submitting a website form and checking the SMS consent checkbox. 
-                    </li>
-                    <li>
-                        Opt-Out: You may opt out at any time by replying STOP to any message received. 
-                    </li>
-                    <li>
-                        Help: Reply HELP for assistance.
-                    </li>
-                    <li>
-                        Message Frequency: Message frequency may vary depending on your case status. 
-                    </li>
-                    <li>
-                         Carrier Disclaimer: Carriers are not liable for delayed or undelivered messages. 
-                    </li>
-                    <li>
-                        <strong>
-                            Message & data rates may apply. 
-                        </strong>                        
-                    </li>
-                </ul>
-            </div>
-            <div class="close" id="close" onclick="closeClick(event, 'TOS')">&times;</div>
-        </div>
         <div id="consumerDisclosure" class="invisible">
             <h2>Consumer Disclosure</h2>
             <hr>
@@ -826,10 +469,10 @@ attorney before signing any agreement.
       <footer>
         <hr>
             <div class="foot" id="success">
-                <p><span>Copyright BlackRidge Continuity LLC © All Rights Reserved</span></p>
+                <p><span>© 2026 BlackRidge Continuity LLC. All rights reserved.</span></p>
                 <p>
-                    <span><a class="footlink" onclick="footerLink('privacyPolicy')" href="#privacyPolicy"> Policy</a></span> |
-                    <span><a class="footlink" onclick="footerLink('TOS')" href="#TOS">Terms of Service</a></span> |
+                    <span><a class="footlink" href="PrivacyPolicy.html"> Policy</a></span> |
+                    <span><a class="footlink" href="termsOfService.html">Terms of Service</a></span> |
                     <span><a class="footlink" onclick="footerLink('consumerDisclosure')" href="#consumerDisclosure">Consumer Disclosure</a></span>
                 </p>
                 <p>

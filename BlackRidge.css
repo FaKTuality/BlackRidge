@@ -211,7 +211,7 @@
         padding: auto auto; 
         line-height: 2;
         margin-top: 75px; 
-
+        
     }
 
 
@@ -241,7 +241,7 @@
         cursor: pointer; 
     }    
 
-    .privacyPolicy, .TOS, .consumerDisclosure, .notAGovAgency, .notALawFirm {
+    .consumerDisclosure, .notAGovAgency, .notALawFirm {
         position: fixed; 
         top: 25%; 
         left: 15%; 
@@ -360,6 +360,7 @@ form {
     max-width: 500px; 
     margin-left: auto; 
     margin-right: auto; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 button {
@@ -619,4 +620,27 @@ option:hover {
     font-size: 13px; 
     color: #d93025; 
     margin: 25px 0 0 0; 
+}
+
+.tAndPLinks > p {
+    font-size: 15px; 
+    
+}
+
+.tAndPLinks {
+    width: 300px; 
+    line-height: normal; 
+}
+
+#tAndPL {
+    color: grey; 
+}
+
+#tosl, #pp {
+    color: rgb(218, 170, 40); 
+    text-decoration: none;
+}
+
+#tosl:hover, #pp:hover {
+    cursor: pointer; 
 }
